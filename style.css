@@ -4,12 +4,26 @@
  /* font */
  
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
+ 
+   /*...............
+        nar 
+   ................*/
+   .influence{
+    color: #3A3A3A;
+    width: 244px;
+    height: 52px;
+   }
+  /* ................
+     header start
+   ...................*/
+
 body{
     font-family: 'Poppins', sans-serif;
 }
  .start-journey{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row: reverse;
     grid-gap: 25px;
     margin-top: 20px;
  }
@@ -21,11 +35,16 @@ font-family: 'Poppins';
 font-style: normal;
 color:#3A3A3A;
  }
- .camera{
+ .main-camera{
     width: 440px;
     height: 414px;
    margin-left: 100px;
     margin-top: 0;
+ }
+ .camare{
+    width: 370px;
+    height: 360px;
+    margin-left: 5px;
  }
  .btn{
     background-color: #E02C6D;
@@ -35,20 +54,105 @@ color:#3A3A3A;
     border-radius: 15px;
     width: 120px;
     padding: auto;
-    height: 25px;
+    height: 35px;
 
  }
  /* ..................
  logo image area
  .................... */
  .logo-image {
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FFFFFF;
     width: 1110px;
     height: 110px;
-    background-color: pink;
+   margin-left: 60px;
  }
  .logo{
     justify-content: space-around;
-    width: 100px;
-    height: 70px ;
+    width: 70px;
+    height: 60px ;
+    margin-left: 50px;
+    margin-top: 20px;
  }
+ hr{
+    width: 1110px;
+    margin-left: 80px;
+ }
+ /*.......................
+  Popular Collections Area
+  .........................*/
+  h3{
+    text-align: center;
+  }
+  .popular{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+  }
+  .popular-collection{
+    width: 329px;
+    height: 446px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 6px 2px gray;
+  }
+  .fa-star{
+    color:#FB8200;
+    width: 11.07px;
+    height: 10.32px;
+    margin-left: 8px;
+  }
+  .span{
+    margin-left: 10px;
+  }
+  .paragraph{
+    color: #787885;
+    display: flex;
+    align-items: center;
+  }
+  .text{
+    color: #E02C6D;
+    margin-left: 1100px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  /* .................
+    Featured Products
+   ...................*/
+   .featured{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+   
+   }
+   .featured-place{
+    margin-left: 1px;
+   }
+   /*.................. 
+        Footer 
+   ...................*/
+   .footer{
+    background-color: rgba(23, 0, 128, 0.966);
+    width: 1500px;
+    height: 250px;
+   }
+   .influencer-gear{
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 6px;
+    padding: 30px;
+    width: 262px;
+    height: 139px;
+    color:  #FFFFFF;
+   }
+   /*.................. 
+        media queries 
+   ...................*/
+   @media only screen and (max-width: 688px){
+        
+        .start-journey, .logo-image, .popular, .featured, .influencer-gear{
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+        }
+   }
